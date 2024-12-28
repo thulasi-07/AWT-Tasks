@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Modern Web Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJhoG+3pzIu2J1oIMpPGrdGZMbG/RabS98RxUhpAKyxZ5P4z2gxtBTO8+bH5" crossorigin="anonymous">
+</head>
+<body class="bg-light">
+
+    <!-- Container -->
+    <div class="container py-5">
+
+        <!-- Header Section -->
+        <header class="text-center mb-5">
+            <h1 class="display-3 font-weight-bold">Bootstrap Modern UI</h1>
+            <p class="lead">Building a beautiful and responsive web page with Bootstrap components.</p>
+        </header>
+
+        <!-- Button to Open Modal -->
+        <div class="text-center mb-4">
+            <button class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#myModal">Click Me for More Info</button>
+        </div>
+
+        <!-- Alert Section -->
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <strong>Heads up!</strong> This is a Bootstrap alert component.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Card Section -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 1</h5>
+                        <p class="card-text">This is some text inside a Bootstrap card. Cards are great for displaying content in a neat and flexible way.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 2</h5>
+                        <p class="card-text">This is another card with more content. Cards help keep your design clean and responsive.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+                <div class="card shadow-lg">
+                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 3</h5>
+                        <p class="card-text">This is a third card. Cards can display content such as images, text, and buttons all in one neat container.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <div class="mt-5">
+            <h3 class="text-center">Sign Up</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <div class="mb-3">
+                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                </div>
+                <button type="submit" class="btn btn-success w-100">Sign Up</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="myModalLabel">More Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Bootstrap is an open-source front-end framework that helps you design responsive websites faster. It includes pre-designed components, utilities, and JavaScript plugins to help you build websites that look good on any device.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS & Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gyb4C6G1z7tC5vnz6VstzDlDmjFki3r/Fyfu0p/3M59YzR2R/Bp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0YPQNaxYv5G+7o2tOhk9KU7rWUl/2pD8LqZbc/ZKsk/20T60" crossorigin="anonymous"></script>
+</body>
+</html>
